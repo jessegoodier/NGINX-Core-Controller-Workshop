@@ -1,6 +1,6 @@
 # Workshop Guide
 
-We will need 2 VMs. I'll be using ubuntu, but anything that NGINX supports will work with slight syntax changes.
+We will need 2 VMs. 
 
 ---
 
