@@ -13,7 +13,7 @@ We will need 2 VMs.
   <https://docs.docker.com/compose/install/>
   3. Clone this reop:
 
->git clone git@github.com:jessegoodier/NGINX-Core-Controller-Workshop.git
+>git clone https://github.com/jessegoodier/NGINX-Core-Controller-Workshop.git
 
 >cd NGINX-Core-Controller-Workshop
 

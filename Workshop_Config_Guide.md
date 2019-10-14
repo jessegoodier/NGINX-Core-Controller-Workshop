@@ -22,6 +22,53 @@
 2. Reload nginx
     >nginx -s reload
 
-3. Copy commands from controller>Graphs>New Instance (on bottom left).
+3. Browse to the real-real time dashboard that was just enabled by going to http://plus-ip/dashboard.html 
 
-4. 
+4. Copy commands from controller>Graphs>New Instance (on bottom left).
+
+## Configure Load Balancing Within Controller
+
+5. Wait for the new instance to appear, then click on the load balancing tab and edit the default route to be a proxy to http://time_service/
+
+6. Save all sections you modified and then create a new upstream group called time_service
+
+7. In the upstream servers section add IPofPlusInstance:81 and IPofPlusInstance:82 give them weights of 1 and 2 respectively.
+
+8. Save all sections and note the additial options availible.
+
+9.  Save the configuration and then click the Instances menu and push the config to your plus instance.
+
+10. run a curl (or web browser) to the IP of your plus instance and refresh a few times to see the load balancing.
+
+11. Feel free to change the balancing algorithim and re-push the config to see the different results.
+
+12. View the changes made to /etc/nginx/nginx.conf 
+
+## Configure API Management
+
+13. Go back to the Load Balancing tab and click instances and unlink your plus instance.
+
+14. Once complete, click on API Management and entry points. Name it F1_API with the IP of the Plus1 VM on port 80 and add the plus instance to it.
+
+15. Next create an upstream group, name it F1 Upstreams and add IPofPlusInstance:8001 and IPofPlusInstance:8002
+
+16. Now create an API definition and name it F1 API. Use the base path of /api/f1
+
+17. Save and add resources /drivers and /seasons. on /seasons change from prefix to exact. Call this environment production.
+
+18. Select the entry point, click save. 
+
+19. Scroll to the bottom and add the routes to the resources we created.
+
+20. Publish and wait for the success message.
+
+21. curl a few of these examples:
+
+```
+curl localhost/api/f1/seasons
+curl localhost/api/f1/drivers
+curl localhost/api/f1/seasons/2003
+curl localhost/api/f1/seasons/2003.json
+```
+
+22. Because json is better, let's force all responses to be json. Edit the config and add a rule>rewrite rule matching ^(.*)$ to $1.json
