@@ -14,6 +14,7 @@ to create everything.
 This script assumes you don't have any conflicting ports or container names.
 
 >Used ports: 81, 82, 8001, 8002
+
 >docker container names: api1, api2,ergastf1api_web_1,ergastdb
 
 Modify the docker-compose.yaml and agent-stack.yml to fit your needs.
