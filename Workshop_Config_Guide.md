@@ -2,7 +2,7 @@
 
 ## Install Controler Agent on workshop-plus1
 
-1. Uncomment the following lines from /etc/nginx/conf.d/default.conf
+1. Optional: either use the nginx-plus-api.conf config or uncomment the following lines from /etc/nginx/conf.d/default.conf. The fucntionality here can be enabled using the controller GUI as well.
 
 ```conf
     location /api/ {
