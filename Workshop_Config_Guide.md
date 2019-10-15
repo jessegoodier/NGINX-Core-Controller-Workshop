@@ -1,8 +1,17 @@
 # Workshop Config Guide
 
-## Install Controler Agent on workshop-plus1
 
-1. Optional: either use the nginx-plus-api.conf config or uncomment the following lines from /etc/nginx/conf.d/default.conf. The fucntionality here can be enabled using the controller GUI as well.
+
+## Install NGINX Plus on VM1
+
+1. Install controller following the install guide: <https://docs.nginx.com/nginx-controller/admin-guide/installing-nginx-controller/>
+
+## Install NGINX Plus on VM1
+
+2. Either follow the NGINX Plus install guide <https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-plus/> (or optionally use the plus-isntall.sh cheat script)
+
+
+3. Optional: either use the nginx-plus-api.conf config or uncomment the following lines from /etc/nginx/conf.d/default.conf. The fucntionality here can be enabled using the controller GUI as well.
 
 ```conf
     location /api/ {
@@ -24,7 +33,9 @@
 
 3. Browse to the real-real time dashboard that was just enabled by going to http://plus-ip/dashboard.html 
 
-4. Copy commands from controller>Graphs>New Instance (on bottom left).
+## Install Controler Agent on workshop-plus1
+
+4. Copy commands from the controller>Graphs>New Instance (on bottom left).
 
 ## Configure Load Balancing Within Controller
 
