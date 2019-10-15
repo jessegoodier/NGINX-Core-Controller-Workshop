@@ -2,11 +2,12 @@
 
 
 
-## Install NGINX Plus on VM1
+## Install Controller on VM2: workshop-controller
 
 1. Install controller following the install guide: <https://docs.nginx.com/nginx-controller/admin-guide/installing-nginx-controller/>
+2. Install license file on https://workshop-controller
 
-## Install NGINX Plus on VM1
+## Install NGINX Plus on VM1: workshop-plus1
 
 2. Either follow the NGINX Plus install guide <https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-plus/> (or optionally use the plus-isntall.sh cheat script)
 
@@ -33,11 +34,11 @@
 
 3. Browse to the real-real time dashboard that was just enabled by going to http://plus-ip/dashboard.html 
 
-## Install Controler Agent on workshop-plus1
+## Install Controler Agent on VM1: workshop-plus1
 
 4. Copy commands from the controller>Graphs>New Instance (on bottom left).
 
-## Configure Load Balancing Within Controller
+## Configure Load Balancing Within Controller gui
 
 5. Wait for the new instance to appear, then click on the load balancing tab and edit the default route to be a proxy to http://time_service/
 
