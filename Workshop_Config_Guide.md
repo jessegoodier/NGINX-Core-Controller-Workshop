@@ -14,21 +14,6 @@
 
 3. Optional: either use the nginx-plus-api.conf config or uncomment the following lines from /etc/nginx/conf.d/default.conf. The fucntionality here can be enabled using the controller GUI as well.
 
-```conf
-    location /api/ {
-        api write=on;
-    #    allow 127.0.0.1;
-    #    deny all;
-    }
-
-    # enable NGINX Plus Dashboard; requires /api/ location to be
-    # enabled and appropriate access control for remote access
-    #
-    location = /dashboard.html {
-        root /usr/share/nginx/html;
-    }
-```
-
 2. Reload nginx
     >nginx -s reload
 
@@ -36,7 +21,7 @@
 
 ## Install Controler Agent on VM1: workshop-plus1
 
-4. Copy commands from the controller>Graphs>New Instance (on bottom left).
+4. Copy commands from the controller>Graphs>New Instance (on bottom left) to the plus isntance. Ignore the error about the API path, will configure that via the GUI.
 
 ## Configure Load Balancing Within Controller gui
 
