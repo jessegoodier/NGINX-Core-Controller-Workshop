@@ -17,7 +17,9 @@ We will need 2 VMs.
 
 >cd NGINX-Core-Controller-Workshop
 
->sh start.sh
+Create the containers we will use with:
+
+>sh start_containers.sh
 
 4. Wait 30 seconds or so for the ergastdb to init. Run these tests:
 

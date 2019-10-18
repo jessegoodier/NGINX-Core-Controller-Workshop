@@ -1,6 +1,7 @@
 ergastdb:
   container_name: workshop-db
   build: ergastdb/
+  restart: always
   environment:
     MYSQL_ROOT_PASSWORD: f1
     MYSQL_DATABASE: ergastdb
@@ -11,6 +12,7 @@ ergastdb:
 web:
   container_name: workshop-f1-api
   build: ./lamp
+  restart: always
   ports:
     - '8001:80'
     - '8002:80'
