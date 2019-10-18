@@ -4,10 +4,7 @@ Creates a couple docker containers with web servers listening on 4 ports to aid 
 
 ## Getting Started
 
-After cloning this repo, run:
->sh start.sh
-
-to create everything.
+See the Workshop_Prep_Guide.md and Workshop_Config_Guide.md
 
 ## Known Issues
 
