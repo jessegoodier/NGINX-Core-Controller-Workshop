@@ -70,4 +70,4 @@ curl localhost/api/f1/drivers/arnold.json
 
 22. Because json is better, let's force all responses to be json. Edit the config and add a rule>rewrite rule matching ^(.*)$ to $1.json
 
-23. Plublish and test a couple more requests.
+23. Publish and test a couple more requests.
