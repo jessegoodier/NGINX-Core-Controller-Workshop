@@ -64,8 +64,8 @@
 ```
 curl localhost/api/f1/seasons
 curl localhost/api/f1/drivers
-curl localhost/api/f1/seasons/2003
-curl localhost/api/f1/seasons/2003.json
+curl localhost/api/f1/drivers.json
+curl localhost/api/f1/drivers/arnold.json
 ```
 
 22. Because json is better, let's force all responses to be json. Edit the config and add a rule>rewrite rule matching ^(.*)$ to $1.json
