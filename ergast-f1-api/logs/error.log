@@ -1,22 +1,2 @@
-[Tue Sep 10 06:25:09.690461 2019] [mpm_prefork:notice] [pid 31] AH00163: Apache/2.4.7 (Ubuntu) PHP/5.5.9-1ubuntu4.24 configured -- resuming normal operations
-[Tue Sep 10 06:25:09.690478 2019] [core:notice] [pid 31] AH00094: Command line: '/usr/sbin/apache2'
-[Thu Oct 10 18:25:38.235060 2019] [mpm_prefork:notice] [pid 44] AH00163: Apache/2.4.7 (Ubuntu) PHP/5.5.9-1ubuntu4.29 configured -- resuming normal operations
-[Thu Oct 10 18:25:38.241043 2019] [core:notice] [pid 44] AH00094: Command line: '/usr/sbin/apache2'
-[Thu Oct 10 18:38:33.325340 2019] [mpm_prefork:notice] [pid 44] AH00169: caught SIGTERM, shutting down
-[Thu Oct 10 18:38:53.714519 2019] [mpm_prefork:notice] [pid 44] AH00163: Apache/2.4.7 (Ubuntu) PHP/5.5.9-1ubuntu4.29 configured -- resuming normal operations
-[Thu Oct 10 18:38:53.745099 2019] [core:notice] [pid 44] AH00094: Command line: '/usr/sbin/apache2'
-[Thu Oct 10 18:41:59.403087 2019] [mpm_prefork:notice] [pid 44] AH00169: caught SIGTERM, shutting down
-[Thu Oct 10 18:42:36.669179 2019] [mpm_prefork:notice] [pid 44] AH00163: Apache/2.4.7 (Ubuntu) PHP/5.5.9-1ubuntu4.29 configured -- resuming normal operations
-[Thu Oct 10 18:42:36.669377 2019] [core:notice] [pid 44] AH00094: Command line: '/usr/sbin/apache2'
-[Thu Oct 17 08:04:05.413022 2019] [mpm_prefork:notice] [pid 47] AH00163: Apache/2.4.7 (Ubuntu) PHP/5.5.9-1ubuntu4.29 configured -- resuming normal operations
-[Thu Oct 17 08:04:05.415422 2019] [core:notice] [pid 47] AH00094: Command line: '/usr/sbin/apache2'
-[Thu Oct 17 08:04:24.369346 2019] [:error] [pid 51] [client 172.17.0.1:53474] PHP Notice:  Undefined index: query in /var/www/html/php/api/index.php on line 16
-[Thu Oct 17 08:04:24.369582 2019] [:error] [pid 51] [client 172.17.0.1:53474] PHP Notice:  Undefined index: callback in /var/www/html/php/api/index.php on line 28
-[Fri Oct 18 16:35:25.780765 2019] [mpm_prefork:notice] [pid 47] AH00163: Apache/2.4.7 (Ubuntu) PHP/5.5.9-1ubuntu4.29 configured -- resuming normal operations
-[Fri Oct 18 16:35:25.782734 2019] [core:notice] [pid 47] AH00094: Command line: '/usr/sbin/apache2'
-[Fri Oct 18 16:37:34.672949 2019] [mpm_prefork:notice] [pid 47] AH00163: Apache/2.4.7 (Ubuntu) PHP/5.5.9-1ubuntu4.29 configured -- resuming normal operations
-[Fri Oct 18 16:37:34.673494 2019] [core:notice] [pid 47] AH00094: Command line: '/usr/sbin/apache2'
-[Fri Oct 18 16:38:19.961177 2019] [mpm_prefork:notice] [pid 47] AH00163: Apache/2.4.7 (Ubuntu) PHP/5.5.9-1ubuntu4.29 configured -- resuming normal operations
-[Fri Oct 18 16:38:19.991369 2019] [core:notice] [pid 47] AH00094: Command line: '/usr/sbin/apache2'
-[Fri Oct 18 16:39:02.372947 2019] [mpm_prefork:notice] [pid 47] AH00163: Apache/2.4.7 (Ubuntu) PHP/5.5.9-1ubuntu4.29 configured -- resuming normal operations
-[Fri Oct 18 16:39:02.373132 2019] [core:notice] [pid 47] AH00094: Command line: '/usr/sbin/apache2'
+[Thu Oct 31 11:22:13.222266 2019] [mpm_prefork:notice] [pid 33] AH00163: Apache/2.4.7 (Ubuntu) PHP/5.5.9-1ubuntu4.29 configured -- resuming normal operations
+[Thu Oct 31 11:22:13.223848 2019] [core:notice] [pid 33] AH00094: Command line: '/usr/sbin/apache2'
