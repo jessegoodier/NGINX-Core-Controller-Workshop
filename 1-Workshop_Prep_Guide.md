@@ -11,7 +11,7 @@ We will need 2 VMs.
 
   2. Install docker-compose:
   <https://docs.docker.com/compose/install/>
-  3. Clone this reop:
+  3. Clone this repo:
 
 >git clone https://github.com/jessegoodier/NGINX-Core-Controller-Workshop.git
 
